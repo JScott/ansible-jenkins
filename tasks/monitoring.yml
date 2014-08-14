@@ -1,0 +1,15 @@
+---
+- name: Upload Config | monit | jenkins
+  template:
+    src: etc/monit/conf.d/jenkins
+    dest: /etc/monit/conf.d/jenkins
+  notify: Reload Service | jenkins
+
+- name: Trigger All Callbacks
+  meta: flush_handlers
+
+- name: Confirm Monitoring | jenkins
+  monit:
+    state: present
+    name: jenkins
+
