@@ -1,5 +1,0 @@
----
-- name: Service Started | jenkins
-  service:
-    state: started
-    name: jenkins
