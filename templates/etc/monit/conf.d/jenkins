@@ -1,4 +1,4 @@
-check process jenkins with pidfile /var/run/jenkins/jenkins.pid
+check process jenkins with pidfile {{ jenkins_pidfile_path }}
   start program "/usr/sbin/service jenkins start"
   stop program "/usr/sbin/service jenkins stop"
   if 5 restarts within 5 cycles then timeout

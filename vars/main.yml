@@ -1,0 +1,5 @@
+---
+jenkins_user: jenkins
+
+jenkins_runtime_root: "{{ runtime_root }}/jenkins"
+jenkins_pidfile_path: "{{ jenkins_runtime_root }}/jenkins.pid"

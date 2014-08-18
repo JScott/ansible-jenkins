@@ -19,3 +19,10 @@
     pkg: "{{ item }}"
   with_items:
     - jenkins
+
+- name: Service Stopped | jenkins
+  service:
+    state: stopped
+    name: jenkins
+  tags:
+    - disruptive
