@@ -1,3 +1,6 @@
 ---
 dependencies:
+  - role: meta/repository
+    repository_key: '0x9b7d32f2d50582e6'
+    repository_url: 'deb http://pkg.jenkins-ci.org/debian binary/'
   - role: package/java

@@ -1,18 +1,4 @@
 ---
-- name: Import Signing Key | Jenkins
-  apt_key:
-    state: present
-    url: "http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key"
-
-- name: Import Repository | Jenkins
-  apt_repository:
-    state: present
-    repo: 'deb http://pkg.jenkins-ci.org/debian binary/'
-  notify: Update Package Cache
-
-- name: Trigger All Callbacks
-  meta: flush_handlers
-
 - name: Install Packages | apt
   apt:
     state: latest
