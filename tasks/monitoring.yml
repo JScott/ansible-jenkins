@@ -19,9 +19,3 @@
 
 - name: Trigger All Callbacks
   meta: flush_handlers
-
-- name: Confirm Monitoring | jenkins
-  monit:
-    state: present
-    name: jenkins
-
