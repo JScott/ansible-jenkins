@@ -7,5 +7,5 @@
     state: restarted
     name: jenkins
   tags:
-    - monit
+    - using-monit
     - disruptive
