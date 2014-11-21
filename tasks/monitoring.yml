@@ -1,0 +1,12 @@
+---
+- name: "Directory Exists | {{ jenkins_runtime_root }}"
+  file:
+    state: directory
+    path: "{{ jenkins_runtime_root }}"
+    owner: "{{ jenkins_user }}"
+    group: wcadmin
+    mode: 0775
+  tags:
+    - directory-structure
+    - runtime-data
+    - jenkins
