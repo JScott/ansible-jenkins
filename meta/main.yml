@@ -6,4 +6,3 @@ dependencies:
   - role: package/java
   - role: meta/monitor
     monitor_name: jenkins
-    monitor_pidfile: "{{ jenkins_pidfile_path }}"
