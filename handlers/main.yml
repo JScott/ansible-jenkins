@@ -1,11 +1,7 @@
 ---
-- name: Reload Service | monit
-  command: monit reload
-
 - name: Reload Service | jenkins
-  monit:
-    state: restarted
+  service:
+    state: reloaded
     name: jenkins
   tags:
-    - using-monit
     - disruptive
