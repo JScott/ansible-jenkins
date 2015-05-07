@@ -18,7 +18,7 @@
 ```
 - hosts: servers
   roles:
-    - role: package/jenkins
+    - role: telusdigital.jenkins
 ```
 
 ## License
