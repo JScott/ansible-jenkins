@@ -12,6 +12,7 @@
 ## Dependencies
 - [telusdigital.apt-repository](https://github.com/telusdigital/ansible-apt-repository/)
 - [telusdigital.java](https://github.com/telusdigital/ansible-java/)
+- [telusdigital.upstart](https://github.com/telusdigital/ansible-upstart/)
 
 ## Example Playbook
 ```
