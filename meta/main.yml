@@ -1,8 +1,12 @@
 ---
 dependencies:
-  - role: meta/repository
+  - role: telusdigital.apt-repository
     repository_key: '0x9b7d32f2d50582e6'
     repository_url: 'deb http://pkg.jenkins-ci.org/debian binary/'
-  - role: package/java
-  - role: meta/monitor
-    monitor_name: jenkins
+  - role: telusdigital.java
+  - role: telusdigital.upstart
+    upstart_name: jenkins
+    upstart_exec_path: /usr/sbin/service
+    upstart_exec_flags:
+      - jenkins
+      - start
